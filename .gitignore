@@ -1,0 +1,29 @@
+# Ignore node_modules directory in both frontend and backend
+frontend/node_modules/
+backend/node_modules/
+
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore .env files if you have sensitive information
+.env
+
+# Ignore any build files or directories
+/build/
+/dist/
+/out/
+/.vite/
+
+# Ignore any editor-specific files
+.vscode/
+.idea/
+
+# Ignore any OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore local development environment files
+/.env.local
+
+# Ignore generated files
+*.pdf
