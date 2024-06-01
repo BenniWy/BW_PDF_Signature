@@ -51,7 +51,7 @@ const SignatureWizard = () => {
           </Button>
         </Grid>
         {message && (
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ marginLeft: 1 }}>
             <Typography variant="body" color="secondary">
               {message}
             </Typography>
