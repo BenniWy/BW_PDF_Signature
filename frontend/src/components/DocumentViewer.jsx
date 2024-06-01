@@ -34,8 +34,7 @@ const DocumentViewer = () => {
         setErrorMessage("");
       })
       .catch((error) => {
-        console.error("Error uploading the document:", error);
-        setErrorMessage("Error uploading the document");
+        setErrorMessage("Error uploading the document", error);
       });
   };
 
