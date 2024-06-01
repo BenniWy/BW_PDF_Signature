@@ -51,12 +51,16 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 app.post("/api/signature", (req, res) => {
   const { name, pin } = req.body;
 
-  if (pin !== PIN) {
-    return res.status(401).json({ message: "Invalid PIN" });
+  if (!name) {
+    return res.status(400).json({ message: "Please enter your name" });
   }
 
   if (uploadedFiles.size === 0) {
-    return res.status(400).json({ message: "No uploaded file" });
+    return res.status(400).json({ message: "No file uploaded" });
+  }
+
+  if (pin !== PIN) {
+    return res.status(401).json({ message: "Invalid PIN" });
   }
 
   // Signature logic
