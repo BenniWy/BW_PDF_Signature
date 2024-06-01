@@ -1,7 +1,5 @@
 # BW_PDF_Signature
 
-Add your `test.pdf` in backend directory
-
 Commands:
 
 cd backend  
